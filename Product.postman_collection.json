@@ -1,0 +1,231 @@
+{
+	"info": {
+		"_postman_id": "c8506eb9-c652-447c-87c6-fd2a6b42ee9e",
+		"name": "Product",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create Account",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"accountId\":\"21\",\r\n    \"accountName\":\"Oscar\",\r\n    \"accountType\":\"Cuenta corriente\",\r\n    \"accountCommission\":\"6\",\r\n    \"accountLimitMovement\":\"1000\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8084/account",
+					"host": [
+						"localhost"
+					],
+					"port": "8084",
+					"path": [
+						"account"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Account",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"accountId\":\"21\",\r\n    \"accountName\":\"Oscar\",\r\n    \"accountType\":\"Cuenta fijo\",\r\n    \"accountCommission\":\"6\",\r\n    \"accountLimitMovement\":\"2000\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8084/account/21",
+					"host": [
+						"localhost"
+					],
+					"port": "8084",
+					"path": [
+						"account",
+						"21"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Find All Account",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8084/account",
+					"host": [
+						"localhost"
+					],
+					"port": "8084",
+					"path": [
+						"account"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Find By Id Account",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8084/account/21",
+					"host": [
+						"localhost"
+					],
+					"port": "8084",
+					"path": [
+						"account",
+						"21"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Account",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8084/account/21",
+					"host": [
+						"localhost"
+					],
+					"port": "8084",
+					"path": [
+						"account",
+						"21"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Credit",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"creditId\":\"21\",\r\n    \"creditName\":\"demo\",\r\n    \"creditType\":\"Personal\",\r\n    \"creditMaximumNumber\":\"1500\",\r\n    \"creditCardNumber\":\"2121928098\",\r\n    \"creditLimit\":\"1000\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8084/credit",
+					"host": [
+						"localhost"
+					],
+					"port": "8084",
+					"path": [
+						"credit"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Credit",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"creditId\":\"21\",\r\n    \"creditName\":\"demo\",\r\n    \"creditType\":\"Empresarial\",\r\n    \"creditMaximumNumber\":\"2000\",\r\n    \"creditCardNumber\":\"2121928098\",\r\n    \"creditLimit\":\"3000\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8084/credit/21",
+					"host": [
+						"localhost"
+					],
+					"port": "8084",
+					"path": [
+						"credit",
+						"21"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Find All Credit",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8084/account",
+					"host": [
+						"localhost"
+					],
+					"port": "8084",
+					"path": [
+						"account"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Find By Id Credit",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8084/account/21",
+					"host": [
+						"localhost"
+					],
+					"port": "8084",
+					"path": [
+						"account",
+						"21"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Credit",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8084/account/21",
+					"host": [
+						"localhost"
+					],
+					"port": "8084",
+					"path": [
+						"account",
+						"21"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,120 @@
+{
+	"info": {
+		"_postman_id": "2d08931e-dff7-4c1c-ba32-03eedcab7edc",
+		"name": "Client",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"clientId\":\"21\",\r\n    \"clientName\":\"Oscar\",\r\n    \"clientStatus\":\"A\",\r\n    \"clientDNI\":\"78679878\",\r\n    \"clientEmail\":\"demo@gmail.com\",\r\n    \"clientType\":\"Empresarial\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8083/client",
+					"host": [
+						"localhost"
+					],
+					"port": "8083",
+					"path": [
+						"client"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"clientId\":\"21\",\r\n    \"clientName\":\"Luis\",\r\n    \"clientStatus\":\"A\",\r\n    \"clientDNI\":\"78679878\",\r\n    \"clientEmail\":\"demo@gmail.com\",\r\n    \"clientType\":\"Personal\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8083/client/21",
+					"host": [
+						"localhost"
+					],
+					"port": "8083",
+					"path": [
+						"client",
+						"21"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Find All",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8083/client",
+					"host": [
+						"localhost"
+					],
+					"port": "8083",
+					"path": [
+						"client"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Find By Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8083/client/21",
+					"host": [
+						"localhost"
+					],
+					"port": "8083",
+					"path": [
+						"client",
+						"21"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8083/client/21",
+					"host": [
+						"localhost"
+					],
+					"port": "8083",
+					"path": [
+						"client",
+						"21"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
